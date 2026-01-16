@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01", "01", "{02EA681E-C7D8-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsNumberOddOrNot", "IsNumberOddOrNot\IsNumberOddOrNot.csproj", "{01D5A4A6-7D57-47D6-B141-8F9D4DA8422A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02", "02", "{D549C470-46DA-4C7E-9E77-74287F7EBAB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGreatestNumber", "TheGreatestNumber\TheGreatestNumber.csproj", "{72EFD389-69D4-4A15-9B3D-BDC040630C44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{01D5A4A6-7D57-47D6-B141-8F9D4DA8422A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D5A4A6-7D57-47D6-B141-8F9D4DA8422A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D5A4A6-7D57-47D6-B141-8F9D4DA8422A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EFD389-69D4-4A15-9B3D-BDC040630C44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EFD389-69D4-4A15-9B3D-BDC040630C44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EFD389-69D4-4A15-9B3D-BDC040630C44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EFD389-69D4-4A15-9B3D-BDC040630C44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{01D5A4A6-7D57-47D6-B141-8F9D4DA8422A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{72EFD389-69D4-4A15-9B3D-BDC040630C44} = {D549C470-46DA-4C7E-9E77-74287F7EBAB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F0A3506-0657-4AB6-8C4A-B722E4547D59}
