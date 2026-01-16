@@ -1,20 +1,15 @@
 ﻿//Construir un programa que pida por pantalla 3 números y luego diga cuál es el mayor de los números ingresados.
+using Shared;
 
-int a, b, c;
-bool valido;
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
 
 do
 {
-    Console.Write("INGRESE TRES NUMEROS. \n");
-
-    Console.Write("Ingrese primer numero: ");
-    valido = int.TryParse(Console.ReadLine(), out a);
-
-    Console.Write("Ingrese segundo numero: ");
-    valido &= int.TryParse(Console.ReadLine(), out b);
-
-    Console.Write("Ingrese tercer numero: ");
-    valido &= int.TryParse(Console.ReadLine(), out c);
+    Console.WriteLine("Ingrese 3 números diferentes");
+    var a = ConsoleExtension.GetInt("Ingrese primer número : ");
+    var b = ConsoleExtension.GetInt("Ingrese segundo número: ");
+    var c = ConsoleExtension.GetInt("Ingrese tercer número : ");
 
     if (a == b || a == c || b == c)
     {
@@ -23,10 +18,22 @@ do
     }
 
     if (a > b && a > c)
-        Console.WriteLine($"El mayor es: {a}");
+    {
+        Console.WriteLine($"El número mayor es: {a}");
+    }
     else if (b > a && b > c)
-        Console.WriteLine($"El mayor es: {b}");
+    {
+        Console.WriteLine($"El número mayor es: {b}");
+    }
     else
-        Console.WriteLine($"El mayor es: {c}");
-    break;
-} while (true);
+    {
+        Console.WriteLine($"El número mayor es: {c}");
+    }
+
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
+Console.WriteLine("Game Over.");
