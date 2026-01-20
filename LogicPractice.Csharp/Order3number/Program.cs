@@ -3,6 +3,7 @@
 
 using Shared;
 
+var answer = string.Empty;
 do
 {
     Console.WriteLine("Ingrese 3 numero diferentes...\n");
@@ -50,4 +51,6 @@ do
             Console.WriteLine($"El mayor es {c}, el medio es {b}, el menor es {a}");
         }
     }
-} while (true);
+    answer = ConsoleExtension.GetValidOptions("Desea continuar S[si], N[no]?: ", new List<string> { "s", "n" });
+} while (answer!.ToLower() == "s");
+Console.WriteLine("FIN");

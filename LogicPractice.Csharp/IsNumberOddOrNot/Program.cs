@@ -1,10 +1,13 @@
 ﻿//NUMERO ES PAR O NO //
+using Shared;
+using System.Runtime.InteropServices;
 
 var numberStr = string.Empty;
+var answer = string.Empty;
 do
 
 {
-    Console.Write("Ingrese un número entero o 'salir' para salir: ");
+    Console.Write("Ingrese un número entero: ");
     numberStr = Console.ReadLine();
     if (numberStr!.ToLower() == "salir")
     {
@@ -24,5 +27,7 @@ do
         }
     }
     else { Console.WriteLine($"{numberStr} no es un numero valido."); }
-} while (numberStr!.ToLower() != "salir");
+
+    answer = ConsoleExtension.GetValidOptions("Desea continuar S[si], N[no]?: ", new List<string> { "s", "n" });
+} while (answer!.ToLower() == "s");
 Console.WriteLine("Fin");
