@@ -1,0 +1,55 @@
+10 ALMACENES SUCESO S.A. 
+Almacenes SUCESO S.A. desea saber el valor de venta de un producto VR_V, a partir de la siguiente información que 
+posee de éste: 
+Costo de compra CC 
+Tipo de producto TP (Perecedero o No perecedero). 
+Tipo de conservación TC (frio o Ambiente)  
+Periodo de Conservación en días. PC 
+Periodo de almacenamiento en días PA 
+Volumen en litros VOL 
+Medio de almacenamiento MA (Nevera, congelador, estantería y guacal) 
+El valor de venta VR_V es igual a:   
+El 20% más del valor del producto VR_P, cuando el tipo de producto TP corresponde a un artículo no perecedero, o El 
+40% más del valor del producto VR_P, cuando el tipo de producto TP corresponde a un artículo perecedero. 
+El valor del producto VR_P, se calcula de la suma del Costo de compra CC, costo de almacenamiento CA y costo de 
+exhibición CE, multiplicados por el porcentaje de depreciación del producto PDP. 
+Los costos y el porcentaje de depreciación deben ser calculados en subprogramas así: 
+Función Costo de Almacenamiento.  En este se debe calcular el costo de almacenamiento CA para ser devuelto al 
+programa principal. 
+El costo de almacenamiento CA, se diferencia para artículos perecederos y no perecederos.  
+• Para los productos perecederos: 
+Costo de almacenamiento CA es igual al 5% del costo de compra CC cuando se trata de un producto de tipo de 
+conservación TC en frio y con un período de conservación PC inferior a 10 días. 
+Costo de almacenamiento CA es igual al 10% del costo de compra CC cuando se trata de un producto de tipo de 
+conservación TC en frio y con un período de conservación PC superior o igual  10 días. 
+Costo de almacenamiento CA es igual al 3% del costo de compra CC cuando se trata de un producto de tipo de 
+conservación TC en ambiente y con un período de almacenamiento PA en inferior a 20 días. 
+Costo de almacenamiento CA es igual al 10% del costo de compra CC cuando se trata de un producto de tipo de 
+conservación TC en ambiente y con un período de almacenamiento PA superior  a 20 días. 
+Costo de almacenamiento CA es igual al 5% del costo de compra CC cuando se trata de un producto de tipo de 
+conservación TC en ambiente y con un período de almacenamiento PA  exacto a 20 días. 
+
+• Para los productos no perecederos 
+El costo de almacenamiento CA se calcula a través de su volumen en litros VOL así: 
+Costo de almacenamiento CA es igual al 10% del costo de compra CC cuando el volumen VOL es mayor o igual a los 
+50 litros,  
+Costo de almacenamiento CA es igual  al 20% del costo de compra CC cuando el volumen VOL es menor a los 50 
+litros. 
+Función Porcentaje Depreciación del Producto.  En este se debe calcular el porcentaje de depreciación del producto 
+PDP, para ser devueltos al programa principal. 
+El porcentaje de depreciación del producto PDP es igual al 0.95 cuando el período de almacenamiento PA es inferior a 
+30 días, o 
+El porcentaje de depreciación del producto PDP es igual al 0.85 cuando el período de almacenamiento PA es superior o 
+igual a 30 días 
+Función Costo de  e: El costo de exhibición CE también se diferencia entre artículos perecederos y no perecederos, 
+calculándose así: 
+• Para los productos perecederos: 
+Aquellos artículos perecederos cuyo tipo de conservación TC es frio, y el medio de almacenamiento MA es nevera, el 
+costo de exhibición CE corresponde al doble del costo de almacenamiento CA. 
+Aquellos artículos perecederos cuyo tipo de conservación TC es frio, y el medio de almacenamiento MA es 
+congelador, el costo de exhibición CE corresponde al del costo de almacenamiento CA. 
+• Para los productos no perecederos: 
+El costo de exhibición CE corresponde al 5% del costo de almacenamiento CA, para los productos cuyo medio de 
+almacenamiento MA es en estantería 
+El costo de exhibición CE corresponde al 7% del costo de almacenamiento CA, para los productos cuyo medio de 
+almacenamiento MA es en guacal 
