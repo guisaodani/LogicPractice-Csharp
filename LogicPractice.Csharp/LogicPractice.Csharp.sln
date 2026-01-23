@@ -59,6 +59,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TextFile2.txt = TextFile2.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12", "12", "{BCF30FA9-BC0E-44FF-9F25-2FA724723D38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumAndAverage", "SumAndAverage\SumAndAverage.csproj", "{78224461-E70F-42DD-B2F5-1D625EEFE3ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,6 +117,10 @@ Global
 		{0A0223CC-6A60-4A72-8817-AC128417DF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A0223CC-6A60-4A72-8817-AC128417DF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A0223CC-6A60-4A72-8817-AC128417DF41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78224461-E70F-42DD-B2F5-1D625EEFE3ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78224461-E70F-42DD-B2F5-1D625EEFE3ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78224461-E70F-42DD-B2F5-1D625EEFE3ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78224461-E70F-42DD-B2F5-1D625EEFE3ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,6 +138,7 @@ Global
 		{CB3E8699-5E37-462E-8ACF-200CC78A3D8F} = {A86DEC26-AEBE-425F-875C-78CC88F7CB82}
 		{EF6B2C40-7016-4972-A02F-D86586BB08BA} = {F44CE1E4-F8EB-41C3-B247-F572114ACCC4}
 		{0A0223CC-6A60-4A72-8817-AC128417DF41} = {346C9CAC-3AE8-416B-ADF5-8B20F041681D}
+		{78224461-E70F-42DD-B2F5-1D625EEFE3ED} = {BCF30FA9-BC0E-44FF-9F25-2FA724723D38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F0A3506-0657-4AB6-8C4A-B722E4547D59}
