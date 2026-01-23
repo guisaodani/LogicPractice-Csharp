@@ -18,9 +18,8 @@ namespace Shared
             }
             return factorial;
         }
-    }
 
-    public static bool IsPrime(int n)
+        public static bool IsPrime(int n)
         {
             for (int i = 2; i <= Math.Sqrt(n); i++)
             {
