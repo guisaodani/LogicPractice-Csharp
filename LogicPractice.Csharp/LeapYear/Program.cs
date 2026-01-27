@@ -26,28 +26,31 @@ do
         message = "será";
     }
 
-    if (year % 4 == 0)
-    {
-        if (year % 100 == 0)
-        {
-            if (year % 400 == 0)
-            {
-                Console.WriteLine($"El año: {year}, Si {message} bisiesto");
-            }
-            else
-            {
-                Console.WriteLine($"El año: {year}, No {message} bisiesto");
-            }
-        }
-        else
-        {
-            Console.WriteLine($"El año: {year}, Si {message} bisiesto");
-        }
-    }
-    else
-    {
-        Console.WriteLine($"El año: {year}, No {message} bisiesto");
-    }
+    var isLeapYear = dayUtilities.IsLeapYear(year);
+    Console.WriteLine($"El año: {year}, {(isLeapYear ? "SI" : "NO")} {message} bisiesto");
+
+    //if (year % 4 == 0)
+    //{
+    //    if (year % 100 == 0)
+    //    {
+    //        if (year % 400 == 0)
+    //        {
+    //            Console.WriteLine($"El año: {year}, Si {message} bisiesto");
+    //        }
+    //        else
+    //        {
+    //            Console.WriteLine($"El año: {year}, No {message} bisiesto");
+    //        }
+    //    }
+    //    else
+    //    {
+    //        Console.WriteLine($"El año: {year}, Si {message} bisiesto");
+    //    }
+    //}
+    //else
+    //{
+    //    Console.WriteLine($"El año: {year}, No {message} bisiesto");
+    //}
 
     do
     {
