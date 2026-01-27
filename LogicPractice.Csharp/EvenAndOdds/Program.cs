@@ -1,4 +1,13 @@
-﻿using Shared;
+﻿//Construir un programa que cree un vector de N posiciones. Si la posición es par, la celda del vector se debe llenar con la
+//siguiente formula Celda[i] = i + 7.  Si la celda es impar, la celda del vector se debe llenar con la siguiente formula Celda[i]
+//= i - 1.  Se debe mostrar como quedo el arreglo y luego debe mostrar la sumatoria de las celdas con valores pares y la
+//productoria de las celdas con valores impares.
+//Construir un programa que cree un vector de N posiciones. Si la posición es par, la celda del vector se debe llenar con la
+//siguiente formula Celda[i] = i + 7.  Si la celda es impar, la celda del vector se debe llenar con la siguiente formula Celda[i]
+//= i - 1.  Se debe mostrar como quedo el arreglo y luego debe mostrar la sumatoria de las celdas con valores pares y la
+//productoria de las celdas con valores impares.
+
+using Shared;
 using System.Globalization;
 using System.Security.Cryptography;
 
